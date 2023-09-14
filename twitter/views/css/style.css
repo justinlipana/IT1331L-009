@@ -10,7 +10,7 @@ body {
 }
 
 .tweet {
-    background-color: #192734;
+    background-color: #7f0a25;
     border-radius: 8px;
     padding: 16px;
     margin: 16px;
@@ -77,4 +77,8 @@ div img:hover {
 
 #action-value {
     font-family: Arial, sans-serif;
+}
+
+.tweet:nth-child(even) {
+    background-color: #0b6329c2;
 }

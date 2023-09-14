@@ -8,6 +8,7 @@ const userDetailsConfig = {
         }
     }
 }
+
 async function getUserDetails(username) {
     const url = `${userDetailsConfig.api.uri}${username}`;
     console.log(url);
@@ -18,6 +19,7 @@ async function getUserDetails(username) {
     const response = await fetch(url, options);
     return addClientGeneratedProperties(await response.json());
 };
+
 function addClientGeneratedProperties(data) {
     data.twitter_link = `https://twitter.com/${data.username}`;
     return data;
